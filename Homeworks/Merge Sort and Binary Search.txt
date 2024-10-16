@@ -94,8 +94,8 @@ int main() {
 	while (true) {
         srand(time(0));
         int n, min, max;
-		cout << "Enter the size of the array or press any key to exit: ";
-		cin >> n;
+	cout << "Enter the size of the array or press any key to exit: ";
+	cin >> n;
         cout << "Enter the max and min intervals relatively: ";
         cin >> max >> min;
         int* arr1 = new int[n];
@@ -103,21 +103,21 @@ int main() {
         if (cin.fail()) {
             break;
         }
-		fill_arr(arr1, n, max, min);
+	fill_arr(arr1, n, max, min);
         arr_equal(arr1, arr2, n);
         cout << "Unsorted array: ";
         print_arr(arr1, n);
-		auto start1 = steady_clock::now();
+	auto start1 = steady_clock::now();
         bubble_sort(arr1, n);
-		auto finish1 = steady_clock::now();
+	auto finish1 = steady_clock::now();
         auto start2 = steady_clock::now();
         merge_sort(arr2, 0, n-1);
         auto finish2 = steady_clock::now();
         cout << "Sorted array:";
-		print_arr(arr1, n);
-		auto duration1 = duration_cast<microseconds>(finish1 - start1).count();
+	print_arr(arr1, n);
+	auto duration1 = duration_cast<microseconds>(finish1 - start1).count();
         auto duration2 = duration_cast<microseconds>(finish2 - start2).count();
-		cout <<"\nBubble sort duration(mcs): " << duration1 << "\n" <<"Merge sort duration(mcs): " << duration2<<"\n" << endl;
+	cout <<"\nBubble sort duration(mcs): " << duration1 << "\n" <<"Merge sort duration(mcs): " << duration2<<"\n" << endl;
         int num;
         cout << "Choose a number you want to get from the array: ";
         cin >> num;
