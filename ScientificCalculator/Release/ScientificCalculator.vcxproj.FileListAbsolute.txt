@@ -1,0 +1,3 @@
+C:\Users\HP\source\repos\ScientificCalculator\ScientificCalculator\Release\ScientificCalculator.vcxproj.AssemblyReference.cache
+C:\Users\HP\source\repos\ScientificCalculator\ScientificCalculator\Release\ScientificCalculator.vcxproj.GenerateResource.cache
+C:\Users\HP\source\repos\ScientificCalculator\ScientificCalculator\Release\ScientificCalculator.MyForm.resources
